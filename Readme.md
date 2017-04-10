@@ -1,3 +1,6 @@
+Original without Babel =
+https://github.com/igniteram/protractor-cucumber-allure
+
 ###Protractor-Cucumber-Allure Setup Guide
 
  [![CircleCI](https://circleci.com/gh/igniteram/protractor-cucumber-allure/tree/circle-ci.svg?style=shield)](https://circleci.com/gh/igniteram/protractor-cucumber-allure/tree/circle-ci)
@@ -34,7 +37,7 @@ https://nodejs.org/en/download/
 * Clone the repository into a folder
 * Go inside the folder and run following command from terminal/command prompt
 
- >  npm install 
+ >  npm install
 
 * All the dependencies from package.json would be installed in node_modules folder.
 * Following command will launch the browser and run the scripts
@@ -53,12 +56,12 @@ https://nodejs.org/en/download/
 ####Writing Step Definitions
 >     var homePage = function () {
      "use strict";
-    var search = new searchPage(); 
+    var search = new searchPage();
     this.Given(/^I am on google page$/, function () {
      return expect(search.title()).to.eventually.equal('Google');
        });
      };
-         
+
 ####Writing Page Objects
 >     var googleSearch = function () {
     "use strict";
