@@ -2,6 +2,11 @@ var chai = require('chai');
 var chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
 
+require('babel-register')({
+  presets: ['es2015'],
+});
+
+
 exports.config = {
 
     directConnect: true,
